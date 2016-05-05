@@ -42,6 +42,7 @@ img{
 	font-size: 1.2em;
 	padding: 0 40px;
 	height: 100%;
+	cursor: pointer;
 }
 
 
@@ -136,17 +137,17 @@ address{
 }
 
 
-.offers ul li{
-	font-size: 1.3em;
+#right-panel ul li{
+	font-size: 1.2em;
 	list-style-type: none;
-	padding: 25px 0 25px 30px;
+	padding: 20px 0 20px 30px;
 	border-bottom: 1px solid black;
 }
 
-.offers ul{
+#right-panel ul{
 	padding: 0;
 }
-.offers h4{
+#right-panel h4{
 	text-transform: uppercase;
 }
 
@@ -154,9 +155,83 @@ address{
 			/*slider*/
 
 #slider{
+	position: relative;
+}
+#slider img{
 	width: 100%;
+	display: none;
 }
 
+#slider span{
+	position: absolute;
+	color: #A3A3A6;
+	font-size: 4em;
+	cursor: pointer;
+	padding:35% 0;
+	opacity: .6;
+	transition: opacity .2s;
+}
+#slider span:hover{
+	opacity: 1;
+}
+#slider span.glyphicon-chevron-left{
+	left: 20px;
+}
+#slider span.glyphicon-chevron-right{
+	right: 20px;
+}
+
+			/*offers panel*/
+
+
+.offer img{
+	width: 100%;
+	padding-top: 5%;
+}
+.offer {
+	position: relative;
+	padding: 0;
+	padding-bottom: 5px;
+	cursor: pointer;
+}
+#left-panel .special-price{
+	position: absolute;
+	top: 15px;
+	left: 10px;
+	color: #F3F0F3;
+}
+#left-panel span{
+	position: absolute;
+	height: 30%;
+	bottom: 28px;
+	color: #F3F0F3;
+	font-size: 1.36em;
+	text-shadow: black 1px 1px 1px;
+}
+
+#left-panel ul{
+	position: absolute;
+	width: 100%;
+	background-color: #2F7DBF;
+	height: 30%;
+	bottom: -5px;
+	font-size: 1em;
+	color: #F3F0F3;
+}
+
+#left-panel ul li{
+	display: inline-block;
+	font-size: 2em;
+	padding-left: 3px;
+	position: relative;
+}
+
+#left-panel ul i{
+	display: block;
+	font-size: .5em;
+	position: absolute;
+	left: -5px;
+}
 
 
 /*main content =======>>*/
@@ -194,7 +269,7 @@ address{
 	#right-info ul li:first-child{
 		background-position: 20px -18px;
 	}
-	.offers ul li{
+	#right-panel ul li{
 		padding: 15px 0 15px 30px;
 	}
 }
@@ -229,6 +304,14 @@ address{
 	.navbar-right i{
 		display: block;
 	}
+
+	#left-panel ul{
+		padding-left: 90px;
+		font-size: 1.5em;
+	}
+	#left-panel .special-price{
+		font-size: 2em;
+	}
 }
 
 @media only screen and (max-width: 583px){
@@ -239,6 +322,25 @@ address{
 	#registration ul li:first-child{
 		padding-left: 10px;
 	}
+
+	#left-panel ul{
+		font-size: .1em;
+		padding-left: 100%;
+	}
+}
+@media only screen and (max-width: 650px){
+	#registration ul li{
+		font-size: 1.1em;
+		padding: 0 5px;
+	}
+	#registration ul li:first-child{
+		padding-left: 10px;
+	}
+	#left-panel ul{
+		font-size: .9em;
+		padding-left: 10%;
+	}
+
 }
 
 @media only screen and (max-width: 428px){
@@ -250,12 +352,17 @@ address{
 	#basket span{
 		display: none;
 	}
+		#left-panel ul{
+		font-size: .6em;
+	}
 }
 
 @media only screen and (max-width: 767px){
 	#search-form{
 		display: block !important;
 		position: static;
+		width: 99%;
+		padding-left: 8%;
 	}
 	.navbar-right i{
 		display: none;
@@ -265,6 +372,7 @@ address{
 		left: 15%;
 		top: 1px;
 	}
+
 }
 
 @media only screen and (min-width : 992px){
