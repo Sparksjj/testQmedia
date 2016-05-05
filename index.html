@@ -24,8 +24,11 @@
 <!-- top panel -->
     <header class="container-fluid top-info">
       <div class="container">
-        <div id="logo">
-          <img src="image/logo.png">
+        <div id="registration">
+          <ul>
+            <li>вход</li>
+            <li>регистрация</li>
+          </ul>
         </div>
   
         <div class="pull-right" id="basket">
@@ -40,15 +43,15 @@
         <div id="left-info" class="col-md-3">
           <span>Время работы 8:00 - 22:00 </span> г. Минск, ул. Сурганова 57б, пав. 22, торговый центр "Европа"
         </div>
-<!-- 
+
         <div id="main-logo">
-          <img src="image/main-logo.png" alt="" class="img-responsive center-block">
-        </div> -->
+          <a href="#"><img src="image/logo.jpg" alt="" class="img-responsive center-block"></a>
+        </div>
 
         <div id="right-info" class="col-md-3 col-md-offset-6 text-right">
           <ul>
-            <li>+375 (29) 123 45 67</li>
             <li>+375 (33) 123 45 67</li>
+            <li>+375 (29) 123 45 67</li>
           </ul>
           <a href="#" class="btn btn-default">Обратный звонок</a>
         </div>
@@ -83,23 +86,24 @@
           </ul>
           
           <ul class="nav navbar-nav navbar-right">
-            <form class="navbar-form navbar-left" role="search">
+            <form class="navbar-form navbar-left" role="search" id="search-form">
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search">
+                <input type="text" class="form-control" placeholder="Поиск">
               </div>
-              <button type="submit" class="btn btn-default">Submit</button>
+              <button type="submit" class="btn btn-default">Поиск</button>
             </form>
+            <i class="glyphicon glyphicon-search"></i>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
 
-<!-- slider -->
+<!-- slider and offers -->
   <section class="container-fluid offers">
     <div class="container">
       
       <div id="left-panel" class="col-md-3">
-        <div class="offer special">
+        <div class="offer" id="special">
           <img src="image/special-offer.jpg" alt="special-offer">
         </div>
         <div class="offer">
@@ -112,9 +116,9 @@
       </div>
 
       <div id="right-panel" class="col-md-3">
-        <h4>Наши преимущества</h4>
+        <h4 class="text-center">Наши преимущества</h4>
         <ul>
-          <li><i>бесплатный</i> проэкт</li>
+          <li><i>Бесплатный</i> проэкт</li>
           <li>Натуральные материалы</li>
           <li>5 лет полной гарантии</li>
           <li>Доступная цена</li>
@@ -126,9 +130,154 @@
   </section>
 
 <!-- main content -->
-    <main>
+    <main class="container-fluid main-content">
+      <aside class="col-md-3">
+        <ul>
+
+          <li>Катигория 1
+            <ul>
+              <li>Подкатигория 1.1</li>
+              <li>Подкатигория 1.1</li>
+            </ul>
+          </li>
+          <li>Катигория 2
+            <ul>
+              <li>Подкатигория 2.1</li>
+              <li>Подкатигория 2.1</li>
+            </ul>
+          </li>
+          <li>категория 3</li>
+          <li>категория 4</li>
+        </ul>
+
+        <h3 class="aside-title">Типы домов<h3>
+        <a href="">Испанский</a>
+        <a href="">Норвежский</a>
+        <a href="">Британский</a>
+        <a href="">Беларусский</a>
+        <a href="">Американский</a>
+        <a href="">Голландский</a>
+        <a href="">Другое</a>
+
+        <h3 class="aside-title">Матерьялы<h3>
+        <a href="">Натуральный утеплитель</a>
+        <a href="">Белый дуб</a>
+        <a href="">Апельсиновое дерево</a>
+        <a href="">Сосна</a>
+        <a href="">Ель</a>
+        <a href="">Береза</a>
+        <a href="">Другое</a>
+
+        <h3 class="aside-title">Другое<h3>
+        <a href="">Беседки</a>
+        <a href="">Лавочки</a>
+        <a href="">Сараи</a>
+        <a href="">Будки</a>
+        <a href="">Бани</a>
+        <a href="">Другое</a>
+
+        <a href="#" class="btn btn-default">Индивидуальный заказ</a>
+
+        <h3 class="aside-title">Отзывы<h3>
+        <div class="comment">
+          <h4>Отличный дом для всей семьи</h4>
+          <p>
+            Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна,
+            типографии, оборудования, и распечатки вместо английского текста для того,
+            чтобы сделать ударение не на содержание, а на элементы дизайна.
+            Такой текст также называется как заполнитель.
+          </p>
+          <span>Андрей, 23.01.2016</span>
+        </div>         
+        
+        <h3 class="aside-title">Информация для покупателей<h3>
+        <div class="customer-info">
+          <p>
+            Сделать закас на сайте <a href="/">Test.by</a> легко. Можно оформить непосредственно на сайте или связаться с менаджером по одному из контактных телефонов. 
+          </p>
+          <p>
+            Сделать закас на сайте <a href="/">Test.by</a> легко. Можно оформить непосредственно на сайте или связаться с менаджером по одному из контактных телефонов. 
+          </p>
+        </div>
+
+        <h3 class="aside-title">Новости<h3>
+        <div class="news-block">
+          <img src="image/news.jpg">
+          10 лучших проэктов домов этого года <span>26.08.2015</span>
+        </div>
+        <div class="news-block">
+          <img src="image/news.jpg">
+          10 лучших проэктов домов этого года <span>26.08.2015</span>
+        </div>
+        <div class="news-block">
+          <img src="image/news.jpg">
+          10 лучших проэктов домов этого года <span>26.08.2015</span>
+        </div>        
+      </aside>
+
+
+      <div class="col-md-9">
+      
+        <div class="col-md-4">
+          <img src="image/main-content.jpg">
+        </div>
+        <div class="col-md-4">
+          <img src="image/main-content.jpg">
+        </div>
+        <div class="col-md-4">
+          <img src="image/main-content.jpg">
+        </div> 
+          
+        <div class="col-md-4">
+          <img src="image/main-content.jpg">
+        </div>
+        <div class="col-md-4">
+          <img src="image/main-content.jpg">
+        </div>
+        <div class="col-md-4">
+          <img src="image/main-content.jpg">
+        </div> 
+          
+        <div class="col-md-4">
+          <img src="image/main-content.jpg">
+        </div>
+        <div class="col-md-4">
+          <img src="image/main-content.jpg">
+        </div>
+        <div class="col-md-4">
+          <img src="image/main-content.jpg">
+        </div> 
+          
+        <div class="col-md-4">
+          <img src="image/main-content.jpg">
+        </div>
+        <div class="col-md-4">
+          <img src="image/main-content.jpg">
+        </div>
+        <div class="col-md-4">
+          <img src="image/main-content.jpg">
+        </div>
+
+        <a href="#" class="btn btn-default text-center">Все товары</a>  
+              
+        <p>Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии, оборудования, и распечатки вместо английского текста для того, чтобы сделать ударение не на содержание, а на элементы дизайна. Такой текст также называется как заполнитель. Это очень удобный инструмент для моделей (макетов).</p>
+        <p>Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии, оборудования, и распечатки вместо английского текста для того, чтобы сделать ударение не на содержание, а на элементы дизайна. Такой текст также называется как заполнитель. Это очень удобный инструмент для моделей (макетов).</p>
+
+      </div>
 
     </main>
+
+    <footer class="container-fluid footer">      
+        
+      <div class="container top-footer">
+        
+      </div>   
+
+      <div class="container bottom-footer">
+        
+      </div>
+
+    </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
